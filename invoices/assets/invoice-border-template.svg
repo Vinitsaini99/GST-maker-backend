@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="2480" height="3508" viewBox="0 0 2480 3508">
+  <defs>
+    <style>
+      .outer { fill: none; stroke: #2D3748; stroke-width: 3; }
+      .accent { fill: #1A5FB4; stroke: none; }
+      .corner { fill: none; stroke: #1A5FB4; stroke-width: 4; stroke-linecap: square; }
+      .section { fill: none; stroke: #C5CED8; stroke-width: 2; }
+      .section-dark { fill: none; stroke: #2D3748; stroke-width: 2; }
+      .header-bg { fill: #E8F1FA; stroke: #C5CED8; stroke-width: 2; }
+      .items-grid-h { stroke: #C5CED8; stroke-width: 1; }
+      .items-header { fill: #E8F1FA; stroke: #1A5FB4; stroke-width: 3; }
+      .footer-box { fill: none; stroke: #2D3748; stroke-width: 2; }
+      .footer-divider { stroke: #C5CED8; stroke-width: 2; }
+      .label { fill: #64748B; font-family: Arial, Helvetica, sans-serif; font-size: 22px; }
+    </style>
+  </defs>
+
+  <!-- Page background -->
+  <rect width="2480" height="3508" fill="#FFFFFF"/>
+
+  <!-- Outer frame -->
+  <rect class="outer" x="120" y="120" width="2240" height="3268" rx="2"/>
+  <rect class="accent" x="121" y="121" width="2238" height="8"/>
+
+  <!-- Corner brackets (top-left) -->
+  <polyline class="corner" points="120,320 120,120 320,120"/>
+  <!-- top-right -->
+  <polyline class="corner" points="2160,120 2280,120 2280,320"/>
+  <!-- bottom-left -->
+  <polyline class="corner" points="120,3188 120,3388 320,3388"/>
+  <!-- bottom-right -->
+  <polyline class="corner" points="2160,3388 2280,3388 2280,3188"/>
+
+  <!-- Header section -->
+  <rect class="header-bg" x="160" y="180" width="2160" height="280"/>
+  <line class="section" x1="160" y1="520" x2="2320" y2="520"/>
+  <text class="label" x="180" y="210">HEADER  GSTIN ù Logo ù TAX INVOICE ù Company</text>
+
+  <!-- Party / invoice meta -->
+  <rect class="section" x="160" y="540" width="2160" height="300"/>
+  <text class="label" x="180" y="570">PARTY DETAILS ù INVOICE META</text>
+
+  <!-- Items table -->
+  <rect class="items-header" x="160" y="880" width="2160" height="70"/>
+  <rect class="section-dark" x="160" y="880" width="2160" height="1180"/>
+  <!-- sample horizontal grid lines -->
+  <line class="items-grid-h" x1="160" y1="950" x2="2320" y2="950"/>
+  <line class="items-grid-h" x1="160" y1="1030" x2="2320" y2="1030"/>
+  <line class="items-grid-h" x1="160" y1="1110" x2="2320" y2="1110"/>
+  <line class="items-grid-h" x1="160" y1="1190" x2="2320" y2="1190"/>
+  <line class="items-grid-h" x1="160" y1="1270" x2="2320" y2="1270"/>
+  <line class="items-grid-h" x1="160" y1="1350" x2="2320" y2="1350"/>
+  <line class="items-grid-h" x1="160" y1="1430" x2="2320" y2="1430"/>
+  <line class="items-grid-h" x1="160" y1="1510" x2="2320" y2="1510"/>
+  <line class="items-grid-h" x1="160" y1="1590" x2="2320" y2="1590"/>
+  <line class="items-grid-h" x1="160" y1="1670" x2="2320" y2="1670"/>
+  <line class="items-grid-h" x1="160" y1="1750" x2="2320" y2="1750"/>
+  <line class="items-grid-h" x1="160" y1="1830" x2="2320" y2="1830"/>
+  <line class="items-grid-h" x1="160" y1="1910" x2="2320" y2="1910"/>
+  <!-- vertical item columns -->
+  <line class="items-grid-h" x1="280" y1="880" x2="280" y2="2060"/>
+  <line class="items-grid-h" x1="780" y1="880" x2="780" y2="2060"/>
+  <line class="items-grid-h" x1="980" y1="880" x2="980" y2="2060"/>
+  <line class="items-grid-h" x1="1120" y1="880" x2="1120" y2="2060"/>
+  <line class="items-grid-h" x1="1260" y1="880" x2="1260" y2="2060"/>
+  <line class="items-grid-h" x1="1420" y1="880" x2="1420" y2="2060"/>
+  <line class="items-grid-h" x1="1580" y1="880" x2="1580" y2="2060"/>
+  <line class="items-grid-h" x1="1740" y1="880" x2="1740" y2="2060"/>
+  <line class="items-grid-h" x1="1900" y1="880" x2="1900" y2="2060"/>
+  <line class="items-grid-h" x1="2060" y1="880" x2="2060" y2="2060"/>
+  <text class="label" x="180" y="910">ITEMS TABLE  S.N. ù Description ù HSN ù Qty ù GST ù Amount</text>
+
+  <!-- Tax + amount in words -->
+  <rect class="section" x="160" y="2080" width="2160" height="120"/>
+  <rect class="section" x="160" y="2220" width="2160" height="100"/>
+  <text class="label" x="180" y="2110">TAX SUMMARY</text>
+  <text class="label" x="180" y="2250">AMOUNT IN WORDS</text>
+
+  <!-- Footer -->
+  <rect class="footer-box" x="160" y="2360" width="2160" height="980"/>
+  <line class="footer-divider" x1="960" y1="2360" x2="960" y2="3340"/>
+  <line class="footer-divider" x1="1520" y1="2360" x2="1520" y2="3340"/>
+  <line class="accent" x1="160" y1="2363" x2="2320" y2="2363" stroke="#1A5FB4" stroke-width="4"/>
+  <text class="label" x="180" y="2400">BANK ù TERMS</text>
+  <text class="label" x="1000" y="2400">QR CODE</text>
+  <text class="label" x="1560" y="2400">SIGNATURES</text>
+</svg>
