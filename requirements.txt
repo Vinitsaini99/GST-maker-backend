@@ -1,5 +1,6 @@
 Django==5.1.4
 asgiref==3.11.0
+django-unfold==0.94.0
 cloudinary==1.44.1
 dj-database-url==3.1.1
 django-cloudinary-storage==0.3.0
