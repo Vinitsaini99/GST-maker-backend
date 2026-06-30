@@ -7,11 +7,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 
 SECRET_KEY = 'django-insecure-invoiceflow-dev-key-change-in-production'
 DEBUG = True
-ALLOWED_HOSTS = [
-    "localhost",
-    "127.0.0.1",
-    ".up.railway.app",
-]
+ALLOWED_HOSTS = ["*"]
 
 INSTALLED_APPS = [
     'unfold',
