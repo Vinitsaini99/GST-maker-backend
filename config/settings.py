@@ -6,7 +6,7 @@ from config.unfold_settings import UNFOLD  # noqa: F401
 BASE_DIR = Path(__file__).resolve().parent.parent
 
 SECRET_KEY = 'django-insecure-invoiceflow-dev-key-change-in-production'
-DEBUG = False
+DEBUG = True
 ALLOWED_HOSTS = ["*"]
 CSRF_TRUSTED_ORIGINS = ["https://*.up.railway.app",]
 
