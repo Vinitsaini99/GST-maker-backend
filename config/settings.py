@@ -6,9 +6,12 @@ from config.unfold_settings import UNFOLD  # noqa: F401
 BASE_DIR = Path(__file__).resolve().parent.parent
 
 SECRET_KEY = 'django-insecure-invoiceflow-dev-key-change-in-production'
-DEBUG = True
+DEBUG = False   
 ALLOWED_HOSTS = ["*"]
-CSRF_TRUSTED_ORIGINS = ["https://*.up.railway.app",]
+CSRF_TRUSTED_ORIGINS = [
+    "https://gst-maker-frontend.vercel.app",
+    "https://gst-maker-backend-production.up.railway.app",
+]
 
 SECURE_PROXY_SSL_HEADER = ("HTTP_X_FORWARDED_PROTO", "https")
 
@@ -34,8 +37,9 @@ INSTALLED_APPS = [
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'whitenoise.middleware.WhiteNoiseMiddleware',
-    'django.contrib.sessions.middleware.SessionMiddleware',
     'corsheaders.middleware.CorsMiddleware',
+
+    'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
@@ -100,6 +104,8 @@ REST_FRAMEWORK = {
     ),
 }
 
+
+
 STORAGES = {
     "default": {
         "BACKEND": "django.core.files.storage.FileSystemStorage",
@@ -115,8 +121,9 @@ SIMPLE_JWT = {
 }
 
 CORS_ALLOWED_ORIGINS = [
-    'http://localhost:5173',
-    'http://127.0.0.1:5173',
+    "http://localhost:5173",
+    "http://127.0.0.1:5173",
+    "https://gst-maker-frontend.vercel.app",
 ]
 
 CORS_ALLOW_CREDENTIALS = True
