@@ -4,6 +4,9 @@ from django.templatetags.static import static
 def environment_callback(request):
     return 'Development', 'info'
 
+"STYLES": [
+    lambda request: static("admin/css/invoiceflow_admin.css"),
+]
 
 UNFOLD = {
     'SITE_TITLE': 'InvoiceFlow Admin',
