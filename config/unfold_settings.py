@@ -1,12 +1,11 @@
 from django.templatetags.static import static
 
 
+
 def environment_callback(request):
     return 'Development', 'info'
 
-"STYLES": [
-    lambda request: static("admin/css/invoiceflow_admin.css"),
-]
+
 
 UNFOLD = {
     'SITE_TITLE': 'InvoiceFlow Admin',
@@ -19,8 +18,8 @@ UNFOLD = {
     'BORDER_RADIUS': '12px',
     'DASHBOARD_CALLBACK': 'config.dashboard.dashboard_callback',
     'ENVIRONMENT': environment_callback,
-    'STYLES': [
-        lambda request: static('admin/css/invoiceflow_admin.css'),
+     "STYLES": [
+        lambda request: static("admin/css/invoiceflow_admin.css"),
     ],
     'COLORS': {
         'base': {
